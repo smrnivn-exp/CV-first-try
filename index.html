@@ -2,106 +2,85 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Vanyok CV</title>
+        <title>CV</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <table cellspacing="20">
-            <tr>
-                <td><img src="Photo.jpg" alt="Photo" width="250"></td>
-                <td>  
-                    <h1>Im vanyao - the legend</h1>
-                    <p><em>Основатель движения - кремни России</em></p>
-                    <p><em>Легенда отечественного вокала</em></p>
-                </td>
-            </tr>
-        </table> 
-        <hr size="2" color="black">
-        
-        <h2>Мои соцсети:</h2>
-        <h3>
-            <p>http://tvoyamama.com</p>
-            <p>http://ya@ti@.org</p>
-        </h3>
-         <hr size="5" color="grey" noshade="">
-          <hr size="5" color="blue">
-           <hr size="5" color="red">
-        
-           <h2>Мои хобби:</h2>
-        <ol>
-            <li>Эмо-готство
-                <ul>
-                    <li>у меня губы черные</li>
-                    <li>у меня все черное</li>
-                </ul>  
-            </li>
-            <li>Не платить налоги</li>
-            <li>Быть неподражаемым</li>
-        </ol>
-        <h2>Мои достижения:</h2>
-        <ul> 
-            <li>Красный диплом </li>
-            <li>Синий диплом</li>
-            <li>еще какой-то диплом, забыл</li>
-        </ul>
-        
-        <h2>Опыт работы</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Компания</th>
-                    <th>Должность</th>
-                    <th>Годы работы</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Склад Сережи</td>
-                    <td>Приниси подай, иди нахуй - не мешай</td>
-                    <td>2017 (5ДНЕЙ)</td>
-                </tr>
-                <tr>
-                    <td>Склад вб</td>
-                    <td>Упаковщик</td>
-                    <td>2024 (4ДНЯ)</td>
-                </tr>
-                <tr>
-                    <td>НИОПИК</td>
-                    <td>Младший химик-технолог</td>
-                    <td>2025-now</td>
-            </tbody>
-        </table>
-        <p><em>Текст под наклоном.Осторожно может упасть в любой момент!!!</em></p>
-        <p><strong>А это сильный текст</strong></p>
-        <p><b>А это текст пчела, они похожи</b></p>
-        <br>
-        <p><em><b>Смотри</b></em> про твою маму написали статью --> <a href="https://ru.wikipedia.org/wiki/Ягер,_Кэрол" target="_blank">!Ссылка!</a></p>        
-        <p>Сайт твоей мамки (сюда не влезла) --> <a href="Mamka.html" target="_blank">BIG</a></p>
-        
-        <h2>Связаться со мной</h2>
-        <form action="">
-            <label for="your name">Ваше имя:</label>
-            <input type="text" id="your name" placeholder="Введите ваше имя">
+        <div class="container">
+            <div class="info">
+                <img src="Photo.jpg" alt="Photo" class="Avatar">
+                <div class="info-text">
+                    <h1>Смирнов Иван</h1>
+                    <p>Преподаватель химии и математики</p>
+                    <p>Научный сотрудник в химической лаборатории</p>
 
-            <br>
-            
-            <label for="your email">Ваш email:</label>
-            <input type="email" id="your email" placeholder="Введите ваш email">
-
-            <br>
-
-            <label for="message">Ваше сообщение:</label>
-            
-            <br>
-
-            <textarea name="Сообщение" id="message" rows="10" cols="30" placeholder="Введите ваше сообшение:">
-            </textarea>
-
-            <br>
-
-            <label for="reset"> </label>
-            <input type="reset" id="reset" placeholder="Введите ваш email">
-            
-            <input type="submit" value="Связаться!">
-        </form>
-</body>
+                    <h4>Мои соцсети:</h4> 
+                    <a target="_blank" href="https://t.me/smrn_ivn">Telegram</a>
+                    |
+                    <a target="_blank" href="https://vk.com/smrn_ivn">VK</a>
+                </div>
+            </div>
+            <div class="card bg-yellow">
+                <h2>Мои хобби:</h2>
+                <ol class="list">
+                    <li>Программирование</li>
+                    <li>Изучение английского языка</li>
+                    <li>Занятие спортом</li>
+                </ol>
+            </div>
+            <div class="card bg-green">
+                <h2>Мои достижения:</h2>
+                <ul class="link-list"> 
+                    <li><a target="_blank" href="https://www.muctr.ru/">Окончание РХТУ им. Д.И. Менделеева с отличием</a></li>
+                    <li><a target="_blank" href="https://ru.wikipedia.org/wiki/Брачный_союз">Создание семьи</a></li>
+                </ul>
+            </div>
+            <div class="card bg-red">
+                <h2>Опыт работы</h2>
+                <table class="table">
+                    <tbody>
+                        <tr class="tr">
+                            <td>Склад автозапчестей</td>
+                            <td>Разнорабочий</td>
+                            <td>2017 (5ДНЕЙ)</td>
+                        </tr>
+                        <tr>
+                            <td>Склад Wildberries</td>
+                            <td>Упаковщик</td>
+                            <td>2024 (4ДНЯ)</td>
+                        </tr>
+                        <tr>
+                            <td>НИОПИК</td>
+                            <td>Младший химик-технолог</td>
+                            <td>2025-now</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="contact">
+                <h2>Связаться со мной</h2>
+                <form action="/">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="your name">Ваше имя:</label>
+                            <input type="text" id="your name" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="your email">Ваш email:</label>
+                            <input type="email" id="your email" placeholder="Введите ваш email">
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label for="message">Ваше сообщение:</label>
+                            <textarea name="Сообщение" id="message" rows="3" cols="3" placeholder="Введите ваше сообшение:">
+                            </textarea>
+                        </div> 
+                    <input class="btn" type="submit" value="Связаться!">
+                </form>
+                <!-- <div class="position">
+                    <div class="box"></div> -->
+                </div>
+            </div>
+        </div>    
+    </body>
 </html>
